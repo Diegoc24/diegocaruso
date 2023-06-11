@@ -67,7 +67,7 @@ console.log("entro");
    try {
     const post = await axios.post("http://localhost:3001/contact" ,form, {
         headers: {
-          "Origin": "http://localhost:3000"
+          "Origin": "*"
         }
       })
     

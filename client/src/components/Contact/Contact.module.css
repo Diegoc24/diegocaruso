@@ -35,7 +35,7 @@
     justify-content: center;
    font-weight: 600;
    width: 500px;
-    top: 335px;
+    top: 353px;
     
     
     font-size: 18px;
@@ -44,11 +44,7 @@
  
     
 }
-/* .validation div{
-    background-color: rgba(0, 0, 0, 0.185);
-    padding: 5px;
-    border-radius: 7px;
-} */
+
 .container_form h2{
     position: absolute;
     top: 0px;
@@ -91,7 +87,7 @@
     opacity: 0;
     font-size: 1px;
     
-   top: 374px;
+   top: 388px;
     right: 130px;
     transition: 0.2s ease-in-out all;
    
