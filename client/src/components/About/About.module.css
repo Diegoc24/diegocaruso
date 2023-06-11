@@ -1,0 +1,128 @@
+.container{
+    background: linear-gradient(
+        rgb(1, 1, 31) 20%,
+        rgb(0, 0, 88)
+    );
+    height: 100vh;
+}
+
+.text_about {
+    padding: 10px;
+    font-weight: 200;
+    position: absolute;
+    max-width: 45%;
+    background-color: rgba(0, 0, 0, 0.185);
+    color: rgb(170, 170, 170);
+    top: 700px;
+    right: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: justify;
+  }
+  
+.container h2{
+    position: absolute;
+    top: 1235px;
+    left: 62%;
+    color: rgb(170, 170, 170);
+}
+
+.all{
+    position: absolute;
+    background: linear-gradient(to right, rgba(0, 0, 70, 0), rgba(8, 0, 54, 0) );
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 500px;
+    left: 770px;
+    top: 980px;
+}
+.tech{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform-style: preserve-3d;
+    animation: rotate 30s linear infinite;
+}
+@keyframes rotate{
+    0%{
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100%{
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+.tech span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*60deg)) translateZ(270px);
+}
+.tech span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    transition: 2s;
+}
+
+.tech span:hover img{
+    transform: translateY(-40px);
+}
+.image_about{
+    margin-right: 50%;
+    width: 600px;
+  
+}
+.boton {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    bottom: 50px;
+    right: 0;
+    font-size: 20px;
+    transition: 0.4s ease-in-out all;
+    background-color: black;
+    color: white;
+  }
+  
+  .boton_tech {
+    display: flex;
+    width: 40px;
+    font-size: 14px;
+    transition: 0.4s ease-in-out transform, 0.3s ease-in-out margin-right;
+    margin-left: 8px;
+  }
+  
+  .boton:hover {
+    width: 120px;
+    background-color: rgb(0, 0, 94);
+  }
+  
+  .boton svg {
+    position: absolute;
+    left: 100px;
+    transition: 0.2s;
+    opacity: 0;
+    top: 15px;
+  }
+  
+  .boton:hover svg {
+    left: 10px;
+    opacity: 100;
+  }
+  
+  .boton:hover .boton_tech {
+    transform: translateX(20px);
+    margin-right: -40px;
+  }
+  

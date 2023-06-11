@@ -1,0 +1,22 @@
+
+.container{
+    background-image: url("https://img.freepik.com/vector-premium/fondo-abstracto-azul-oscuro-decoracion-rayas-linea-plateada-moderna_181182-514.jpg?w=996");
+    background-size: cover;
+    height: 100vh;
+}
+.container div{
+    position: absolute;
+    margin-top: 200px;
+    left: 45%;
+    color: white;
+}
+.container img{
+    width: 140px;
+    border-radius: 100%;
+}
+.container h1{
+    margin-top: -5px;
+}
+.container p{
+    margin-top: -15px;
+}

@@ -1,0 +1,224 @@
+.container{
+    height: 100vh;
+    background: linear-gradient(
+        rgb(0, 0, 88),
+        rgb(0, 0, 141)
+    );
+    border-top: rgb(5, 0, 48) solid 3px;
+}
+
+.img_background img{
+    width: 600px;
+    position: absolute;
+    top: 1380px;
+    right: 50px;
+}
+.container_rise_talk{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 100px;
+    top: 1370px;
+    width: 450px;
+    height: 250px;
+    background-color: rgb(233, 233, 233);
+    border: rgb(255, 255, 255) solid 3px;
+    border-radius: 20px;
+    cursor: default;
+    
+}
+
+.container_rise_talk img{
+    width: 350px;
+    height: 100px;
+}
+.container_videogames{
+    position: absolute;
+    top: 1640px;
+    left: 100px;
+    background-color: rgb(233, 233, 233);
+    border: rgb(255, 255, 255) solid 3px;
+    width: 450px;
+    height: 250px;
+    border-radius: 20px;
+    cursor: default;
+}
+.videogame_title {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.171);
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_videogames:hover .videogame_title{
+    opacity: 0;
+}
+.videogame_description{
+    display: flex;
+    position: absolute;
+    font-size: 1px;
+    color: white;
+    top: -1px;
+    opacity: 0;
+    transition: 0.4s;
+    align-items: center;
+
+}
+.container a{
+  color: black;
+}
+.container_videogames:hover .videogame_description{
+
+    top: 0px;
+ opacity: 100;
+ height: 180px;
+    background-color: rgba(0, 0, 0, 0.534);
+    z-index: 1;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.container_videogames img{
+    width: 150px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    top: 35%;
+}
+
+.text_videogame{
+    font-size: 55px;
+    font-weight: bold;
+    position: absolute;
+    top: 35%;
+    left: 150px;
+}
+.svg_enter{
+    display: flex;
+   position: absolute;
+   top: 195px;
+    left: 10px;
+    background-color: rgb(158, 158, 158);
+    width: 50px;
+    height: 40px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out all;
+    cursor: pointer;
+}
+.svg_enter svg{
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    margin-right: 5px;
+    transition: 0.4s;
+    
+}
+.svg_enter div{
+    position: absolute;
+    top: 60px;
+    width: 100px;
+    transition: .3s ease-in-out all;
+    opacity: 0;
+}
+.svg_enter:hover{
+    width: 100px;
+    height: 50px;
+    background-color: rgb(0, 0, 92);
+    border-radius: 3px;
+}
+.svg_enter:hover div{
+    opacity: 100;
+    top: 30px;
+    color: white;
+}
+.svg_enter:hover svg{
+    left: 29px;
+    color: white;
+}
+
+.svg_github {
+    display: flex;
+    position: absolute;
+    top: 195px;
+    right: 10px; 
+    background-color: rgb(158, 158, 158);
+    width: 50px;
+    height: 40px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out all;
+    cursor: pointer;
+  }
+  
+  .svg_github svg {
+    position: absolute;
+    top: 3px;
+    right: 5px; 
+    margin-right: 5px;
+    transition: 0.4s;
+  }
+  
+  .svg_github div {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100px;
+    transition: 0.3s ease-in-out all;
+    opacity: 0;
+    font-size: 14px;
+  }
+  
+  .svg_github:hover {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(0, 0, 92);
+    border-radius: 3px;
+  }
+  
+  .svg_github:hover div {
+    opacity: 100;
+    top: 30px;
+    color: white;
+  }
+  
+  .svg_github:hover svg {
+    right: 29px; 
+    color: white;
+  }
+
+  .rise_talk_description{
+    display: flex;
+    position: absolute;
+    font-size: 1px;
+    color: white;
+    top: -1px;
+    opacity: 0;
+    transition: 0.4s;
+    align-items: center;
+  }
+  .container_rise_talk:hover .rise_talk_description{
+
+    top: 0px;
+ opacity: 100;
+ height: 180px;
+    background-color: rgba(0, 0, 0, 0.534);
+    z-index: 1;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+  .rise_talk_title{
+    display: flex;
+    position: absolute;
+    width: 450px;
+    
+    background-color: rgba(0, 0, 0, 0.171);
+    top: 0;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  .container_rise_talk:hover .rise_talk_title{
+    opacity: 0;
+  }
+
