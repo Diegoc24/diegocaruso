@@ -7,7 +7,8 @@ import Home from './components/Home/Home';
 
 import NavBar from './components/NavBar/NavBar';
 import Proyects from './components/Proyects/Proyects';
-
+import axios from "axios";
+axios.defaults.baseURL = "https://diegocaruso-production.up.railway.app/"
 function App() {
   return (
 

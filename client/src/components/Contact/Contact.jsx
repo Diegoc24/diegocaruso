@@ -5,14 +5,14 @@ import { useState } from "react";
 import axios from "axios"
 
 const Contact = () =>{
-    const [validation, setValidation] = useState("")
-    const [form, setForm] = useState({
+    const initialFormState = {
         name: "",
         last_name: "",
         email: "",
         comment: "",
-       
-    })
+      };
+    const [validation, setValidation] = useState("")
+    const [form, setForm] = useState(initialFormState)
 
 const handlerChange = (e) =>{
     const {name, value, files} = e.target;
@@ -62,7 +62,7 @@ const handlerChange = (e) =>{
 const handlerSubmit = async (e) =>{
     e.preventDefault()
     if(validation === "" && form.name !== "" && form.last_name !== "" && form.email !== "" && form.comment !== ""){
-console.log("entro");
+
     
    try {
     const post = await axios.post("http://localhost:3001/contact" ,form, {
@@ -70,11 +70,11 @@ console.log("entro");
           "Origin": "*"
         }
       })
-    
+    setForm(initialFormState)
         Swal.fire({
             position: 'center',
             icon: 'success',
-            title: 'Your work has been saved',
+            title: 'Su consulta se envio con éxito',
             showConfirmButton: false,
             timer: 2500
           })
@@ -124,13 +124,13 @@ console.log(form);
                 <h2>¿Te gustaría contactarte conmigo?</h2>
                 <form onSubmit={(e)=>handlerSubmit(e)}>
                     <label>Nombre</label>
-                    <input onChange={handlerChange} name="name" type="text"></input>
+                    <input onChange={handlerChange} value={form.name} name="name" type="text"></input>
                     <label >Apellido</label>
-                    <input onChange={handlerChange} name="last_name" type="text"></input>
+                    <input onChange={handlerChange} value={form.last_name} name="last_name" type="text"></input>
                     <label>Email</label>
-                    <input onChange={handlerChange} name="email" type="email"></input>
+                    <input onChange={handlerChange} value={form.email} name="email" type="email"></input>
                     <label>Comentario</label>
-                    <textarea onChange={handlerChange} name="comment" className={style.textarea}></textarea>
+                    <textarea onChange={handlerChange} value={form.comment} name="comment" className={style.textarea}></textarea>
                   
                     
                     <button className={style.button_submit} type="submit"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">

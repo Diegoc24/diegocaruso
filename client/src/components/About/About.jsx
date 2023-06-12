@@ -32,7 +32,7 @@ const About = () => {
         como HTML 5, CSS y JavaScript, también cree algunos sitios para negocios cercanos,
         actualmente termine de cursar en Henry.</h3>
         <h3>Me puedo adaptar a las diferentes tecnologías con gran facilidad. Me encanta la tecnología
-        y la programación, soy una persona organizada, cuando a trabajo en grupo se trata, hay una frase
+        y la programación, soy una persona organizada, cuando se trata de trabajar en grupo, hay una frase
         que me dio mucha gracia “Codifica siempre como si la persona que finalmente mantendrá tu código
         fuera un psicópata violento que sabe dónde vives”
         </h3>
