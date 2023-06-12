@@ -65,7 +65,7 @@ const handlerSubmit = async (e) =>{
 
     
    try {
-    const post = await axios.post("http://localhost:3001/contact" ,form, {
+    const post = await axios.post("/contact" ,form, {
         headers: {
           "Origin": "*"
         }
