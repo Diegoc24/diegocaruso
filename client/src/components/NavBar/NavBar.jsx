@@ -17,7 +17,7 @@ const NavBar = () =>{
             <div className={styles.container_link}>
             <div className={styles.link} onClick={() => scrollSection("home")}>HOME</div>
             <div className={styles.link} onClick={() => scrollSection("about")}>ABOUT</div>
-            <div className={styles.link} onClick={() => scrollSection("proyects")}>PROYECTS </div>
+            <div className={styles.link} onClick={() => scrollSection("projects")}>PROJECTS </div>
             
             <div className={styles.link} onClick={() => scrollSection("contact")}>CONTACT</div>
             <div className={styles.container_git}>

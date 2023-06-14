@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "./Proyects.module.css"
+import styles from "./Projects.module.css"
 import rise_talk from "../../images/principalLogo.png"
 import videogames from "../../images/icono.png"
-const Proyects = ()=>{
+const Projects = ()=>{
     return(
         <div className={styles.container}>
             <div className={styles.img_background}>
@@ -41,7 +41,7 @@ tecnologias como React, Redux, Node.js, Express, entre otras tecnologías.
                     </div>
                     <img src={videogames} alt="videogames" key="videogames"/>
                     <span className={styles.text_videogame}>Videogames</span>
-                    <a href="https://deploy-beta-seven.vercel.app/" rel="noreferrer" target="_blank">
+                    <a href="https://videogamess.vercel.app/" rel="noreferrer" target="_blank">
                     <span className={styles.svg_enter}>
                     <div>Entrar al sitio</div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
@@ -65,4 +65,4 @@ tecnologias como React, Redux, Node.js, Express, entre otras tecnologías.
     )
 }
 
-export default Proyects;
+export default Projects;
