@@ -15,11 +15,11 @@ const NavBar = () =>{
         <div>
         <div className={styles.nav}>
             <div className={styles.container_link}>
-            <div className={styles.link} onClick={() => scrollSection("home")}>HOME</div>
-            <div className={styles.link} onClick={() => scrollSection("about")}>ABOUT</div>
-            <div className={styles.link} onClick={() => scrollSection("projects")}>PROJECTS </div>
+            <div className={styles.link} onClick={() => scrollSection("home")}>INICIO</div>
+            <div className={styles.link} onClick={() => scrollSection("about")}>SOBRE MI</div>
+            <div className={styles.link} onClick={() => scrollSection("projects")}>PROYECTOS</div>
             
-            <div className={styles.link} onClick={() => scrollSection("contact")}>CONTACT</div>
+            <div className={styles.link} onClick={() => scrollSection("contact")}>CONTACTO</div>
             <div className={styles.container_git}>
               
             <a href="https://github.com/Diegoc24" rel="noreferrer" target="_blank"> <img src="https://static-00.iconduck.com/assets.00/github-icon-1024x994-4h5sdmko.png" alt="github" className={styles.img_git}/></a>

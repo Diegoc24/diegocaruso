@@ -18,23 +18,25 @@ const About = () => {
       className={styles.container}
       
     >
-      <div>
+      {/* <div>
         <img
           className={styles.image_about}
           src="https://static.vecteezy.com/system/resources/previews/011/153/363/original/3d-web-developer-working-on-project-illustration-png.png"
           alt="image_about"
         />
-      </div>
+      </div> */}
       <div className={styles.text_about}>
         <h3>
-        Hola! Soy programador full-stack, poseo gran curiosidad por la tecnología desde muy chico,
-        desde mis 14 años que reparo computadoras y a mis 16 años estudie por mi cuenta tecnologías
-        como HTML 5, CSS y JavaScript, también cree algunos sitios para negocios cercanos,
-        actualmente termine de cursar en Henry.</h3>
-        <h3>Me puedo adaptar a las diferentes tecnologías con gran facilidad. Me encanta la tecnología
-        y la programación, soy una persona organizada, cuando se trata de trabajar en grupo, hay una frase
-        que me dio mucha gracia “Codifica siempre como si la persona que finalmente mantendrá tu código
-        fuera un psicópata violento que sabe dónde vives”
+        ¡Hola! Soy programador full-stack, poseo gran curiosidad por la tecnología desde muy chico, 
+        desde mis 14 años que reparo computadoras y a mis 18 años estudie por mi cuenta tecnologías
+        como HTML 5, CSS y JavaScript, también cree algunos sitios para negocios cercanos, actualmente
+        termine de cursar en Henry, donde aprendí tecnologías como Javascript, React, Node.js, Postgres, entre muchas otras.</h3>
+        <h3>Me puedo adaptar a los diferentes lenguajes y herramientas con gran facilidad. Me encanta 
+        la tecnología y la programación, soy una persona organizada, cuando se trata de trabajar en grupo.
+        </h3>
+        <h3>
+        Una de las cosas que aprendí a lo largo de mi vida es que de los errores uno aprende,
+        mejora como persona y también como profesional.
         </h3>
       </div>
       

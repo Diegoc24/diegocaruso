@@ -4,21 +4,23 @@
         rgb(0, 0, 141),
         rgb(55, 202, 247)
     );
+   
 }
 
 .image_background img{
-    width: 400px;
+    width: 29%;
     position: absolute;
-    left: 100px;
-    top: 2100px;
+    left: 10%;
+    
+    top: 325%;
 }
 .container_form{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 500px;
-    top: 70px;
-    height: 550px;
+    width: 40%;
+    top: 15%;
+    height: 80%;
     left: 55%;
     background: linear-gradient(
         rgb(35, 0, 160),
@@ -34,12 +36,13 @@
     color: rgb(255, 0, 0);
     justify-content: center;
    font-weight: 600;
-   width: 500px;
-    top: 353px;
+   width: 80%;
+    top: 100%;
     
     
-    font-size: 18px;
-    left: -50px;
+    font-size: 1.1vw;
+    left: 10%;
+    right: 10%;
    
  
     
@@ -47,9 +50,11 @@
 
 .container_form h2{
     position: absolute;
+    font-size: 2vw;
     top: 0px;
-    width: 500px;
-    right: 0px;
+    width: 90%;
+    right: 5%;
+    left: 5%;
     height: 40px;
 }
 
@@ -62,21 +67,21 @@
 }
 
 .container_form form input{
-    width: 400px;
+    width: 90%;
     margin-bottom: 30px;
 }
 .textarea{
     
-    height: 100px;
+    height: 100%;
     top: 50px;
-    width: 400px;
+    width: 90%;
     resize: none;
 }
 
 .button_submit{
     width: 40px;
     height: 35px;
-    margin-top: 20px;
+    margin-top: 1%;
     border-radius: 4px;
     transition: 0.4s ease-in-out all;
     background-color: rgb(255, 255, 255);
@@ -87,7 +92,7 @@
     opacity: 0;
     font-size: 1px;
     
-   top: 388px;
+   top: 92%;
     right: 130px;
     transition: 0.2s ease-in-out all;
    
@@ -118,6 +123,7 @@
     left: 150px;
 }
 .linkedin svg{
+  
     position: absolute;
     background-color: white;
     transition: 0.5s ease-in-out all;
@@ -129,20 +135,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    top: 247px;
+    margin: 0 auto;
+    margin-top: 33vw;
     height: 35px;
-    transition: .5s ease-in-out all;
+    
     cursor: pointer;
   
 }
 .linkedin:hover{
+  transition: 0.5s ease-in-out;
     width: 140px;
     background-color: rgb(0, 0, 88);
    height: 34px;
     
 }
 .linkedin:hover svg{
+  
 margin-right: 110px;
 color: white;
 background-color: rgb(0, 0, 90);
@@ -152,7 +160,7 @@ background-color: rgb(0, 0, 90);
     left: -90px;
     height: 20px;
     width: 150px;
-    transition: 0.3s;
+    transition: 0.5s ease-in-out;
     color: rgb(255, 255, 255);
     opacity: 0;
     font-size: 1px;
@@ -169,10 +177,10 @@ background-color: rgb(0, 0, 90);
     display: flex;
     align-items: center;
     justify-content: center;
-    right: 30px;
-    top: 505px;
+    right: 4%;
+    top: 90%;
     height: 35px;
-    transition: .5s ease-in-out all;
+    transition: 0.5s ease-in-out all;
     cursor: pointer;
   }
   
@@ -186,10 +194,11 @@ background-color: rgb(0, 0, 90);
     border-radius: 100px;
     color: rgb(0, 0, 88);
     border: white solid 1px;
+    transition: 0.5s ease-in-out;
   }
   .github:hover svg {
     position: absolute;
-    margin-right: 110px;
+    right: 80%;
     color: white;
     
     background-color: rgb(0, 0, 90);
@@ -223,7 +232,7 @@ background-color: rgb(0, 0, 90);
     align-items: center;
     justify-content: center;
     left: 30px;
-    top: 505px;
+    top: 90%;
     height: 35px;
     transition: .5s ease-in-out all;
     cursor: pointer;

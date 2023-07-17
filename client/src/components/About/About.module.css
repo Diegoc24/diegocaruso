@@ -1,43 +1,49 @@
 .container{
     background: linear-gradient(
-        rgb(1, 1, 31) 20%,
-        rgb(0, 0, 88)
+      rgb(1, 0, 31),
+      rgb(0, 0, 88)
     );
     height: 100vh;
 }
 
 .text_about {
     padding: 10px;
+    align-items: center;
     font-weight: 200;
     position: absolute;
-    max-width: 45%;
-    background-color: rgba(0, 0, 0, 0.185);
-    color: rgb(170, 170, 170);
-    top: 700px;
-    right: 20px;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: justify;
+    max-width: 85%;
+    background-color: rgba(0, 0, 0, 0.005);
+    color: rgb(255, 255, 255);
+    top: 105%;
+    right: 7.5%;
+    left: 7.5%;
+    margin: 0 auto;
+    font-size: 1.1vw;
+    text-align: center;
   }
   
 .container h2{
     position: absolute;
-    top: 1235px;
-    left: 62%;
+    top: 180%;
+    left: 35%;
+    right: 35%;
+    width: 30%;
+    font-size: 1.5vw;
     color: rgb(170, 170, 170);
 }
 
 .all{
     position: absolute;
     background: linear-gradient(to right, rgba(0, 0, 70, 0), rgba(8, 0, 54, 0) );
-    height: 350px;
+    height: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    width: 500px;
-    left: 770px;
-    top: 980px;
+    width: 40%;
+    left: 30%;
+    right: 30%;
+    top: 137%;
 }
 .tech{
     position: relative;
@@ -85,6 +91,7 @@
 }
 .boton {
     position: relative;
+    top: 90%;
     width: 100px;
     height: 50px;
     bottom: 50px;
