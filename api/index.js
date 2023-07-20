@@ -3,7 +3,7 @@ const sequelize = require("./src/db")
 require("dotenv").config()
 
 const contact = require("./src/model/userContact")
-const {PORT} = process.env;
+const PORT = process.env.PORT || 3001
 
 
 
