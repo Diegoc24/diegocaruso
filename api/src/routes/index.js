@@ -4,7 +4,7 @@ const {sendMail, mySendMail} = require("../../nodemailer"); // Ajusta la ruta se
 
 const router = Router();
 
-router.post("/contact", async (req, res) => {
+router.post("/", async (req, res) => {
   const { name, last_name, email, comment } = req.body;
 
 if(!name || !last_name || !email || !comment){
