@@ -1,5 +1,5 @@
 const server = require("./src/server")
-const sequelize = require("./src/db")
+// const sequelize = require("./src/db")
 require("dotenv").config()
 
 const contact = require("./src/model/userContact")
@@ -7,8 +7,8 @@ const PORT = process.env.PORT || 3001
 
 
 
-sequelize.sync({force: false}).then(
+
     server.listen(PORT, ()=>{
         console.log(`listening in port ${PORT}`);
     })
-)
+
