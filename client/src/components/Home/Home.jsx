@@ -13,7 +13,7 @@ const Home = () =>{
             <section id="home">
             <div className={style.container}>
             <div>
-                <img src="https://media.licdn.com/dms/image/D4D03AQE0jdJnXvBCTg/profile-displayphoto-shrink_800_800/0/1684214267639?e=1691625600&v=beta&t=3X43-nqY9oPEUrK-fGJ297eVaNIIkY49XrC-YgB2qQw" alt="perfil"/>
+                <img src="https://media.licdn.com/dms/image/D4D03AQE0jdJnXvBCTg/profile-displayphoto-shrink_800_800/0/1684214267639?e=1697673600&v=beta&t=pzc4nDFZvE4GamkcI4JKZsCS5WQkYmb6JbSKVbnalo8" alt="perfil"/>
                 <h1>Diego caruso</h1>
                 <p>Full-Stack Developer</p>
                 <a href={process.env.PUBLIC_URL + '/Diego_Caruso_CV.pdf'} rel="noreferrer" target="_blank"><button className={style.button_cv}>
