@@ -16,7 +16,7 @@ const About = () => {
   const [ref, inView] = useInView({
     rootMargin: "-50% 70%"
   })
- const handlerOpenWindow = ()=>{-
+ const handlerOpenWindow = ()=>{
     setOpenWindow(true)
  }
 
