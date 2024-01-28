@@ -6,10 +6,17 @@ import image3 from "../../images/JavaScript-logo.png";
 import image4 from "../../images/nextjs-icon-512x512-11yvtwzn.png";
 import image5 from "../../images/react-1-logo-png-transparent.png";
 import AllTech from "../AllTech/AllTech";
+import ReactPlayer from "react-player";
+import {useInView} from "react-intersection-observer"
+import videoPerfil from "../../images/videoPerfil.mp4"
+
 const About = () => {
   const images = [image1, image2, image3, image4, image5];
   const [openWindow, setOpenWindow] = useState(false)
- const handlerOpenWindow = ()=>{
+  const [ref, inView] = useInView({
+    rootMargin: "-50% 70%"
+  })
+ const handlerOpenWindow = ()=>{-
     setOpenWindow(true)
  }
 
@@ -39,7 +46,9 @@ const About = () => {
         mejora como persona y también como profesional.
         </h3>
       </div>
-      
+      <div className={styles.muestraVideo} ref={ref}>
+        <ReactPlayer url={videoPerfil} width={"100%"} height={"100%"} controls={true} playing={inView}/>
+      </div>
       <div className={styles.all}>
       <div className={styles.tech}>
       <span style={{ '--i': 1 }}><img className={styles.img1} src="https://seeklogo.com/images/N/next-js-icon-logo-EE302D5DBD-seeklogo.com.png" alt="next" key="next"/></span>
@@ -54,7 +63,7 @@ const About = () => {
       <div>
         {openWindow ? <div className={styles.container_allTech}><AllTech setOpenWindow={setOpenWindow}/></div> : <div></div>}
       </div>
-        
+        <div className={styles.containerButton}>
         <button className={styles.boton} onClick={()=> handlerOpenWindow()}>
             <span className={styles.icon}>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-90deg-up" viewBox="0 0 16 16">
@@ -63,7 +72,7 @@ const About = () => {
             </span>
            <span className={styles.boton_tech}>Todas las tecnologías</span>
         </button>
-      
+        </div>
     </div>
   );
 };

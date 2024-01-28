@@ -116,10 +116,9 @@ const handlerSubmit = async (e) =>{
 console.log(form);
     return(
         <div  className={style.container}>
-          <div className={style.image_background}>
-            <img src="https://www.infowindtech.com/wp-content/themes/infowind-live/assets/images/cover-image-svg.png"
-            alt="image_contact" key="image_contact"/>
-          </div>
+          
+            <h2 className={style.title}>Contacto</h2>
+          
             <div className={style.container_form}>
                 <h2>¿Te gustaría contactarte conmigo?</h2>
                 <form onSubmit={(e)=>handlerSubmit(e)}>
@@ -138,7 +137,7 @@ console.log(form);
 </svg><span>Enviar</span></button>
 <div className={style.validation}><div>{validation}</div></div>
                 </form>
-                <div className={style.container_contact}>
+                {/* <div className={style.container_contact}>
                 <a href="mailto:carusodiegod@gmail.com" rel="noreferrer" target="_blank"> <div className={style.email}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="42" height="32" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
   <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
@@ -155,8 +154,8 @@ console.log(form);
 </svg>
 <span>Mi Linkedin</span>
                 </div></a>
-                </div>
-            </div>
+                </div>*/}
+            </div> 
         </div>
     )
 }

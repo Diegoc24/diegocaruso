@@ -1,51 +1,80 @@
 .container{
-    height: 100vh;
-    background: linear-gradient(
-        rgb(0, 0, 88),
-        rgb(0, 0, 141)
-    );
-    border-top: rgb(5, 0, 48) solid 3px;
+  
+  background: 
+  linear-gradient(-12deg, #ffffff00 50%, rgba(0, 0, 44, 0.786) 50%),
+  linear-gradient(40deg, #ffffff00 50%, rgba(0, 0, 70, 0.786) 30%), url("../../images/tele.jpg");
+    height: 1700px;
+    width: 100vw;
+}
+.allProyects{
+  position: relative;
+  display: grid;
+  width: 100vw;
+  top: 100px;
+  grid-template-columns: repeat(2, 2fr);
+  
+  row-gap: 130px;
+
+  
+  
+}
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 90px;
+  font-weight: bold;
+  padding: 50px;
+  color: rgb(204, 204, 204);
+  background-color: rgba(0, 0, 0, 0.63);
+  margin-bottom: 1px;
 }
 
-.img_background img{
-    width: 600px;
-    position: absolute;
-    top: 1380px;
-    right: 50px;
+.cardBartolo{
+  position: relative;
+  left: 40px;
 }
 .container_rise_talk{
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    left: 10%;
-    top: 211%;
-    width: 33%;
-    height: 250px;
-    background-color: rgb(233, 233, 233);
-    border: rgb(255, 255, 255) solid 3px;
-    border-radius: 20px;
-    cursor: default;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+ 
+  background-color: rgb(233, 233, 233);
+  border: rgb(255, 255, 255) solid 3px;
+  width: 40vw;
+ 
+  height:250px;
+  
+  
+  cursor: default;
     
 }
 
 .container_rise_talk img{
+  position: relative;
     width: 350px;
     height: 100px;
+    top: 35%;
 }
 .container_videogames{
-    position: absolute;
-    top: 255%;
-    left: 10%;
-    background-color: rgb(233, 233, 233);
-    border: rgb(255, 255, 255) solid 3px;
-    width: 33%;
-    height: 250px;
-    border-radius: 20px;
-    cursor: default;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  
+  left: 5vw;
+  background-color: rgb(233, 233, 233);
+  border: rgb(255, 255, 255) solid 3px;
+  width: 40vw;
+  height: 250px;
+  
+  
+  cursor: default;
 }
 .videogame_title {
     display: flex;
+    position: absolute;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.171);
     height: 30px;
     justify-content: center;
@@ -56,34 +85,40 @@
     opacity: 0;
 }
 .videogame_description{
-    display: flex;
-    position: absolute;
-    font-size: 1px;
-    color: white;
-    top: -1px;
-    opacity: 0;
-    transition: 0.4s;
-    align-items: center;
+  display: flex;
+  position: absolute;
+  font-size: 1px;
+  justify-content: center;
+  color: white;
+  top: 253px;
+  opacity: 0;
+  transition: 0.4s;
+  align-items: center;
+  width: 100%;
 
 }
 
 .container_videogames:hover .videogame_description{
 
-    top: 0px;
- opacity: 100;
- height: 180px;
+  opacity: 100;
+  height: 130px;
     background-color: rgba(0, 0, 0, 0.534);
     z-index: 1;
-    border-radius: 20px;
+    
     font-size: 20px;
 }
 .container_videogames img{
     width: 35%;
     height: 30%;
+    display: flex;
+    
     position: absolute;
-    margin: 0 -80px;
-    top: 32%;
+  
+    top: 40%;
     bottom: 38%;
+}
+.container_videogames:hover img{
+  opacity: 30%;
 }
 
 .text_videogame{
@@ -91,14 +126,18 @@
     font-size: 3.5vw;
     font-weight: bold;
     position: relative;
-    top: 23%;
+    margin: 0 auto;
+    top: 20%;
     bottom: 50%;
-    left: 70px;
+    
+}
+.container_videogames:hover .text_videogame{
+  opacity: 30%;
 }
 .svg_enter{
     display: flex;
    position: absolute;
-   top: 195px;
+   top: 75%;
     left: 10px;
     background-color: rgb(158, 158, 158);
     width: 50px;
@@ -141,7 +180,7 @@
 .svg_github {
     display: flex;
     position: absolute;
-    top: 195px;
+    top: 185px;
     right: 10px; 
     background-color: rgb(158, 158, 158);
     width: 50px;
@@ -186,25 +225,84 @@
     right: 29px; 
     color: white;
   }
-
+.container_bartolo{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  
+  margin: 0 auto;
+  background-color: rgb(233, 233, 233);
+  border: rgb(255, 255, 255) solid 3px;
+  width: 40vw;
+  height:250px;
+  
+  
+  cursor: default;
+}
+.container_bartolo:hover .text_bartolo{
+  opacity: 30%;
+}
+.container_bartolo img{
+  width: 35%;
+    height: 30%;
+    display: flex;
+    
+    position: absolute;
+  
+    top: 45%;
+    bottom: 38%;
+}
+.container_bartolo:hover img{
+  opacity: 30%;
+}
+.bartolo_description{
+  display: flex;
+  position: absolute;
+  font-size: 1px;
+  justify-content: center;
+  color: white;
+  top: 252px;
+  opacity: 0;
+  transition: 0.4s;
+  align-items: center;
+  width: 40vw;
+}
+.container_bartolo:hover .bartolo_description{
+  opacity: 100;
+  height: 130px;
+    background-color: rgba(0, 0, 0, 0.534);
+    z-index: 1;
+    
+    font-size: 20px;
+}
+.text_bartolo{
+  position: relative;
+  font-size: 55px;
+  font-weight: bold;
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  justify-content: center;
+}
   .rise_talk_description{
     display: flex;
-    position: absolute;
-    font-size: 1px;
-    color: white;
-    top: -1px;
-    opacity: 0;
-    transition: 0.4s;
-    align-items: center;
+  position: absolute;
+  font-size: 1px;
+  justify-content: center;
+  color: white;
+  top: 352px;
+  opacity: 0;
+  transition: 0.4s;
+  align-items: center;
+  width: 600px;
   }
   .container_rise_talk:hover .rise_talk_description{
 
-    top: 0px;
- opacity: 100;
- height: 180px;
+    opacity: 100;
+  height: 130px;
     background-color: rgba(0, 0, 0, 0.534);
     z-index: 1;
-    border-radius: 20px;
+    
     font-size: 20px;
 }
 
@@ -223,22 +321,28 @@
     opacity: 0;
   }
   .container_ecommerce{
-    position: absolute;
-    top: 211%;
-    left:55%;
-    right: 14%;
-    background-color: rgb(233, 233, 233);
+    position: relative;
+    display: flex;
+    
+    grid-column: span 2;
+    margin: 0 auto;
+    
+    background-color: rgb(37, 37, 37);
     border: rgb(255, 255, 255) solid 3px;
-    width: 33%;
-
-    height: 250px;
-    border-radius: 20px;
+    width: 70vw;
+    height:500px;
+    color: white;
+    
     cursor: default;
 }
+
 .ecommerce_title {
-  display: flex;
-  background-color: rgba(0, 0, 0, 0.171);
+  position: absolute;
+  margin: 0 auto;
+
+  background-color: rgb(0, 0, 0);
   height: 30px;
+  width: 100%;
   justify-content: center;
   align-items: center;
 }
@@ -250,45 +354,54 @@
   display: flex;
   position: absolute;
   font-size: 1px;
+  justify-content: center;
   color: white;
-  top: -1px;
+  top: 505px;
   opacity: 0;
   transition: 0.4s;
   align-items: center;
-
+  width: 70vw;
+  
 }
 .container a{
 color: black;
 }
 .container_ecommerce:hover .ecommerce_description{
 
-  top: 0px;
+  
 opacity: 100;
-height: 180px;
+height: min-content;
   background-color: rgba(0, 0, 0, 0.534);
   z-index: 1;
-  border-radius: 20px;
+  
   font-size: 20px;
 }
 .container_ecommerce img{
   width: 150px;
   height: 80px;
   position: absolute;
-  left: 0;
-  top: 35%;
+  left: 230px;
+  top: 40%;
 }
+.container_ecommerce:hover img{
+  opacity: 20%;
+}
+
 .text_ecommerce{
   font-size: 55px;
   font-weight: bold;
   position: absolute;
-  top: 35%;
-  left: 150px;
+  top: 40%;
+  left: 400px;
+}
+.container_ecommerce:hover .text_ecommerce{
+  opacity: 20%;
 }
 
 .svg_container{
   display: flex;
   position: absolute;
-  top: 78%;
+  top: 75%;
   right: 10px;
   background-color: rgb(158, 158, 158);
   border-radius: 15px;
@@ -331,7 +444,7 @@ height: 180px;
   width: 200px;
   height: 60px;
   border-radius: 3px;
-  top: 76%;
+  top: 75%;
 }
 .svg_container:hover .svg_ecommerce_front{
   transition: 0.4s;
@@ -371,42 +484,43 @@ height: 180px;
   
 }
 .container_dogs{
+  position: relative;
   display: flex;
-  position: absolute;
   justify-content: center;
-  align-items: center;
-  left: 55%;
-  top: 255%;
-  width: 33%;
-
-  height: 250px;
+  
+  margin: 0 auto;
   background-color: rgb(233, 233, 233);
   border: rgb(255, 255, 255) solid 3px;
-  border-radius: 20px;
+  width: 40vw;
+  height:250px;
+  
+  
   cursor: default;
 }
 .container_dogs:hover .rise_talk_description{
 
-  top: 0px;
-opacity: 100;
-height: 180px;
-  background-color: rgba(0, 0, 0, 0.534);
-  z-index: 1;
-  border-radius: 20px;
-  font-size: 20px;
+  
+  opacity: 100;
+  height: 130px;
+    background-color: rgba(0, 0, 0, 0.534);
+    z-index: 1;
+    
+    font-size: 20px;
 }
 .container_dogs img{
   position: relative;
+  display: flex;
   width: 150px;
   height: 100px;
-  right: 15%;
+  right: 10%;
+  top: 35%;
 }
 .text_dogs{
   font-size: 55px;
     font-weight: bold;
     position: absolute;
-    top: 35%;
-   right: 20%;
+    top: 40%;
+   right: 25%;
 }
 .desarrollo{
   transition: 0.5s ease-in-out;
@@ -427,7 +541,7 @@ height: 180px;
   position: relative;
   width: 25px;
   height: 25px;
-  top: 4px;
+ top: -22px;
   left: 2%;
 }
 .container_dogs:hover .desarrollo{

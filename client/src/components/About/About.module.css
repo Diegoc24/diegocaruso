@@ -1,35 +1,44 @@
 .container{
-    background: linear-gradient(
-      rgb(1, 0, 31),
-      rgb(0, 0, 88)
-    );
-    height: 100vh;
+  background-color: rgb(0, 0, 36);
+  height: 190vh;
 }
+
 
 .text_about {
     padding: 10px;
+    background-color: rgb(0, 0, 36);
     align-items: center;
     font-weight: 200;
     position: absolute;
     max-width: 85%;
-    background-color: rgba(0, 0, 0, 0.005);
-    color: rgb(255, 255, 255);
+    border: 2px solid white;
+    color: rgb(160, 160, 160);
     top: 105%;
     right: 7.5%;
     left: 7.5%;
     margin: 0 auto;
+   
     font-size: 1.1vw;
     text-align: center;
   }
+.muestraVideo{
+  display: flex;
+  position: relative;
+  top: 50vh;
+  margin: 0 auto;
+  justify-content: center;
   
+  
+  width: 85%;
+}
 .container h2{
     position: absolute;
-    top: 180%;
+    top: 255vh;
     left: 35%;
     right: 35%;
     width: 30%;
     font-size: 1.5vw;
-    color: rgb(170, 170, 170);
+    color: rgb(102, 102, 102);
 }
 
 .all{
@@ -43,7 +52,7 @@
     width: 40%;
     left: 30%;
     right: 30%;
-    top: 137%;
+    top: 220vh;
 }
 .tech{
     position: relative;
@@ -91,17 +100,24 @@
 }
 .boton {
     position: relative;
-    top: 90%;
+    
+    display: flex;
+    margin: 0 auto;
     width: 100px;
-    height: 50px;
-    bottom: 50px;
-    right: 0;
+    height: 40px;
+    
     font-size: 20px;
     transition: 0.4s ease-in-out all;
     background-color: black;
     color: white;
   }
-  
+  .containerButton{
+    position: absolute;
+    top: 270vh;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
   .boton_tech {
     display: flex;
     width: 40px;
@@ -132,4 +148,16 @@
     transform: translateX(20px);
     margin-right: -40px;
   }
-  
+  .container_allTech{
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 1160px;
+  }
+  .muestraVideo{
+    border: solid 5px white;
+    width: 60%;
+    margin: 0 auto;
+  }

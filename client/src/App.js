@@ -8,6 +8,7 @@ import Home from './components/Home/Home';
 import NavBar from './components/NavBar/NavBar';
 import Projects from './components/Projects/Projects';
 import axios from "axios";
+import Footer from './components/Footer/Footer';
 axios.defaults.baseURL = "https://diegocaruso-production.up.railway.app/"
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
       <section id="about"><About/></section>
       <section id='projects'><Projects/></section>
       <section id='contact'><Contact/></section>
-      
+      <Footer/>
     </div>
   );
 }
