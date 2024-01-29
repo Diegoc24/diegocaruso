@@ -78,7 +78,7 @@ const Projects = ()=>{
                     onClick={()=> setHoverGames({...hoverGames, play: !hoverGames.play})}
                     >
                 
-                    <ReactPlayer url={videoGames} controls={true} width={"100%"} style={hoverGames.style} playing={hoverGames.play}/>
+                    <ReactPlayer url={videoGames} controls={true} width={"100%"} height={"100%"} style={hoverGames.style} playing={hoverGames.play}/>
                
                     <div className={styles.videogame_title}>Sitio de Videojuegos</div>
                    

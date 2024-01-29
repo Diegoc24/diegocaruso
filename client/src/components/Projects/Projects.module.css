@@ -290,16 +290,17 @@
   font-size: 1px;
   justify-content: center;
   color: white;
-  top: 352px;
+  top: 252px;
   opacity: 0;
+  height: max-content;
   transition: 0.4s;
   align-items: center;
-  width: 600px;
+  width: 40vw;
   }
   .container_rise_talk:hover .rise_talk_description{
 
     opacity: 100;
-  height: 130px;
+  
     background-color: rgba(0, 0, 0, 0.534);
     z-index: 1;
     
@@ -317,9 +318,7 @@
     justify-content: center;
     align-items: center;
   }
-  .container_rise_talk:hover .rise_talk_title{
-    opacity: 0;
-  }
+ 
   .container_ecommerce{
     position: relative;
     display: flex;
@@ -501,7 +500,7 @@ height: min-content;
 
   
   opacity: 100;
-  height: 130px;
+  
     background-color: rgba(0, 0, 0, 0.534);
     z-index: 1;
     

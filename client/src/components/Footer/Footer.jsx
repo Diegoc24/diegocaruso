@@ -66,14 +66,14 @@ const Footer = () => {
             <div className={style.container_nav}>
               <ol>
                 <li style={{marginBottom: "40px", fontSize: "34px", fontWeight: "bold"}}>Navegacion</li>
-                <li onClick={()=> scrollSection("home")}>Inicio</li>
-                <li onClick={()=> scrollSection("about")}>Sobre mi</li>
-                <li onClick={()=> scrollSection("projects")}>Proyectos</li>
-                <li onClick={()=> scrollSection("contact")}>contacto</li>
+                <li onClick={()=> scrollSection("home")} className={style.nav}>Inicio</li>
+                <li onClick={()=> scrollSection("about")} className={style.nav}>Sobre mi</li>
+                <li onClick={()=> scrollSection("projects")} className={style.nav}>Proyectos</li>
+                <li onClick={()=> scrollSection("contact")} className={style.nav}>contacto</li>
               </ol>
             </div>
         </div>
-        <h4 style={{top:"-300px"}}>Copyright © E-Commerce Todos los derechos reservados 2023</h4>
+        <h4 style={{top:"-250px"}}>Copyright © Diego Caruso Todos los derechos reservados 2023</h4>
         </div>
     )
 }

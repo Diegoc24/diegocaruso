@@ -50,6 +50,9 @@
   list-style: none;
   
 }
+.nav{
+  cursor: pointer;
+}
 .contact ol li{
  
   display: flex;
