@@ -9,8 +9,11 @@ import NavBar from './components/NavBar/NavBar';
 import Projects from './components/Projects/Projects';
 import axios from "axios";
 import Footer from './components/Footer/Footer';
-axios.defaults.baseURL = "https://diegocaruso-production.up.railway.app/"
+
+
+axios.defaults.baseURL = process.env.REACT_APP_API_URL
 function App() {
+  console.log(process.env.REACT_APP_API_URL)
   return (
 
     <div className="App">
