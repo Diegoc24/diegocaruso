@@ -21,5 +21,5 @@ const contact = sequelize.define("contact", {
    
 })
 
-module.exports= contact;
+module.exports = contact;
 
