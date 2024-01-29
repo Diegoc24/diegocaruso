@@ -69,7 +69,7 @@ const Footer = () => {
                 <li onClick={()=> scrollSection("home")} className={style.nav}>Inicio</li>
                 <li onClick={()=> scrollSection("about")} className={style.nav}>Sobre mi</li>
                 <li onClick={()=> scrollSection("projects")} className={style.nav}>Proyectos</li>
-                <li onClick={()=> scrollSection("contact")} className={style.nav}>contacto</li>
+                <li onClick={()=> scrollSection("contact")} className={style.nav}>Contacto</li>
               </ol>
             </div>
         </div>

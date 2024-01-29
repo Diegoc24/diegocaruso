@@ -35,7 +35,7 @@ const About = () => {
       <div className={styles.text_about}>
         <h3>
         ¡Hola! Soy programador full-stack, poseo gran curiosidad por la tecnología desde muy chico, 
-        desde mis 14 años que reparo computadoras y a mis 18 años estudie por mi cuenta tecnologías
+        desde mis 15 años que reparo computadoras y a mis 16 años estudie por mi cuenta tecnologías
         como HTML 5, CSS y JavaScript, también cree algunos sitios para negocios cercanos, actualmente
         termine de cursar en Henry, donde aprendí tecnologías como Javascript, React, Node.js, Postgres, entre muchas otras.</h3>
         <h3>Me puedo adaptar a los diferentes lenguajes y herramientas con gran facilidad. Me encanta 
