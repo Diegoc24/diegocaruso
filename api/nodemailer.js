@@ -10,9 +10,11 @@ const sendMail = async (email, name) => {
     host:'smtp.gmail.com',
     port: 465,
     secure: true,
+    debug: true,
     auth: {
       user: EMAIL,
       pass: PASSWORD,
+      
     },
   });
   transporter.sendMail({
@@ -51,9 +53,11 @@ const mySendMail = async (email, name, last_name, comment) => {
       host:'smtp.gmail.com',
       port: 465,
       secure: true,
+      debug: true,
       auth: {
         user: EMAIL,
         pass: PASSWORD,
+
       },
     });
     transporter.sendMail({
