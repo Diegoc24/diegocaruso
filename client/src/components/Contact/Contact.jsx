@@ -65,11 +65,11 @@ const handlerSubmit = async (e) =>{
 
     
    try {
-    const post = await axios.post("/" ,form, {
-        headers: {
-          "Origin": "*"
-        }
-      })
+    const post = await axios.post("/" ,form).then(()=>{
+        console.log(post.data);
+    }).catch((err)=>{
+        console.log(err);
+    })
     setForm(initialFormState)
         Swal.fire({
             position: 'center',
