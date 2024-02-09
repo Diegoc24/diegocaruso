@@ -12,8 +12,7 @@ import Footer from './components/Footer/Footer';
 
 
 axios.defaults.baseURL = process.env.REACT_APP_API_URL
-axios.defaults.headers.common['Content-Type'] = 'application/json';
-axios.defaults.headers.common['Access-Control-Allow-Origin'] = `*`;
+
 function App() {
   console.log(process.env.REACT_APP_API_URL)
   return (
