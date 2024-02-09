@@ -17,17 +17,14 @@ const PostUserController = async (req, res) => {
         email,
         comment,
       });
-      await sendMail(email, name).then(() => console.log("email sent"))
-      .catch((error) => {
-        console.error(error)
-        throw new Error({message: error})
-    });
-      await mySendMail(email, name, last_name, comment).then(() => console.log("My email sent"))
-      .catch((error) => {
-        console.error(error)
-        throw new Error({message: error})
-    });
       
+      try {
+        await sendMail(email, name)
+        await mySendMail(email, name, last_name, comment)
+        console.log("emails sents");
+      } catch (error) {
+        console.log(error);
+      }
       
       return contacts
     
