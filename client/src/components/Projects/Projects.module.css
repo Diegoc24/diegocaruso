@@ -125,8 +125,10 @@
   width: 70%;
     font-size: 3.5vw;
     font-weight: bold;
-    position: relative;
-    margin: 0 auto;
+    position: absolute;
+    display: flex;
+    
+    justify-content: center;
     top: 20%;
     bottom: 50%;
     
