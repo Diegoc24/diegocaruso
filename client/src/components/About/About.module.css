@@ -1,6 +1,6 @@
 .container{
   background-color: rgb(0, 0, 36);
-  height: 190vh;
+  height: 140vh;
 }
 
 
@@ -13,7 +13,7 @@
     max-width: 85%;
     border: 2px solid white;
     color: rgb(160, 160, 160);
-    top: 105%;
+    top: 120%;
     right: 7.5%;
     left: 7.5%;
     margin: 0 auto;
@@ -33,7 +33,7 @@
 }
 .container h2{
     position: absolute;
-    top: 255vh;
+    top: 210vh;
     left: 35%;
     right: 35%;
     width: 30%;
@@ -52,7 +52,7 @@
     width: 40%;
     left: 30%;
     right: 30%;
-    top: 220vh;
+    top: 170vh;
 }
 .tech{
     position: relative;
@@ -113,7 +113,7 @@
   }
   .containerButton{
     position: absolute;
-    top: 270vh;
+    top: 220vh;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -154,7 +154,7 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 1160px;
+    top: 147vh;
   }
   .muestraVideo{
     border: solid 5px white;

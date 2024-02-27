@@ -13,11 +13,9 @@ import videoPerfil from "../../images/videoPerfil.mp4"
 const About = () => {
   const images = [image1, image2, image3, image4, image5];
   const [openWindow, setOpenWindow] = useState(false)
-  const [ref, inView] = useInView({
-    rootMargin: "-50% 70%"
-  })
+  
  const handlerOpenWindow = ()=>{
-    setOpenWindow(true)
+    setOpenWindow(!openWindow)
  }
 
   return (
@@ -46,9 +44,9 @@ const About = () => {
         mejora como persona y también como profesional.
         </h3>
       </div>
-      <div className={styles.muestraVideo} ref={ref}>
+      {/* <div className={styles.muestraVideo} ref={ref}>
         <ReactPlayer url={videoPerfil} width={"100%"} height={"100%"} controls={true} playing={inView}/>
-      </div>
+      </div> */}
       <div className={styles.all}>
       <div className={styles.tech}>
       <span style={{ '--i': 1 }}><img className={styles.img1} src="https://seeklogo.com/images/N/next-js-icon-logo-EE302D5DBD-seeklogo.com.png" alt="next" key="next"/></span>

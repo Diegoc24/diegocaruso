@@ -52,17 +52,19 @@
 }
 .close{
     position: absolute;
-    color: white;
+    color: rgb(247, 0, 0);
     width: 20px;
-    border-radius: 2px;
+    
     right: 10px;
+    font-weight: bold;
     top: 5px;
-    background-color: gray;
+    background-color: rgb(255, 255, 255);
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 .close:hover{
     background-color: rgb(177, 0, 0);
+    color: white;
 }
 .alltech{
     color: rgb(175, 175, 175);
